@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="logo1.jpg" type="image/gif" sizes="17x16">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('log1.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  opacity:0.8;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+img{
+  width: 35px;
+  height: 35px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.bottom{
+  position: absolute;
+  top:58%;
+  left:39%;
+  text-align:center;
+}
+.button-1{
+  width:140px;
+  height:50px;
+  border:2px solid orange;
+  background-color: orange;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin-right: 50px;
+}
+.button-1 a{
+  font-family: Arial;
+  font-size:20px;
+  font-weight: bold;
+  color:#34495e;
+  text-decoration: none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-1{
+  width:140px;
+  height:50px;
+  top:-2px;
+  right:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-1:hover .eff-1{
+  right:0;
+}
+.button-1:hover a{
+  color:#fff;
+}
+
+.button-2{
+  width:140px;
+  height:50px;
+  border:2px solid orange;
+  background-color: orange;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+}
+.button-2 a{
+  font-family: Arial;
+  font-size:20px;
+  font-weight: bold;
+  color: #34495e;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-2{
+  width:140px;
+  height:50px;
+  top:-2px;
+  right:-140px;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.button-2:hover .eff-2{
+  right:0;
+}
+.button-2:hover a{
+  color:#fff;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <img src="logo1.jpg">
+  </div>
+  <div class="top">
+    <h1></h1>
+  </div>
+  <div class="middle">
+    <h1>Hotel Recommendation System</h1>
+    <hr>
+  </div>
+  <div class="bottom">
+    <div class="button-1">
+      <div class="eff-1"></div>
+      <a href="login.html"> Sign In </a>
+    </div>
+    <div class="button-2">
+      <div class="eff-2"></div>
+      <a href="signup.html"> Sign Up </a>
+    </div>
+
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
+
+</body>
+</html>
+

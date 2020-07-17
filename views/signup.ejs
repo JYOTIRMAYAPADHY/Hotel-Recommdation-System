@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Sign Up</title>
+    <link rel="icon" href="images/logo1.jpg" type="image/gif" sizes="17x16">
+    <style>
+        body,html{
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-image:url("images/log3.jpg");
+            background-repeat: no-repeat;
+            font-family:sans-serif;
+        }
+        .Login-Box{
+            width:360px;
+            height: 480px;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            background-color: rgba(0,0,0,0.5);
+            transform: translate(-50%,-50%);
+            color: #fff;
+            box-sizing: border-box;
+            padding:70px 30px;
+        }
+        .avatar{
+            width:100px;
+            height: 100px;
+            position: absolute;
+            border-radius: 50%;
+            top:-50px;
+            left:33mm;
+        }
+        h1{
+            text-align: center;
+            font-size:22px;
+            padding:0px 0px 20px 0px;
+            margin:0;
+        }
+        .Login-Box p{
+            padding:0;
+            margin:0;
+            font-weight: bold;
+        }
+        .Login-Box input{
+            width:100%;
+            margin-bottom:20px;
+        }
+        .Login-Box input[type="text"], input[type="password"],input[type="email"]
+        {
+            border-bottom:1px solid #ffffff;
+            border:none;
+            outline: none;
+            background: transparent;
+            font-size: 15px;
+            height: 30px;
+            color: #fff;
+        }
+        .Login-Box input[type="submit"]
+        {
+            border: none;
+            outline: none;
+            height: 40px;
+            border-radius: 20px;
+            color:#fff;
+            font-size: 20px;
+            background: #1c8adb;
+        }
+        .Login-Box input[type="submit"]:hover
+        {
+            background: crimson;
+        }
+        a{
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+        }
+        a:hover{
+            color: gold;
+        }
+        input[type=text]:focus {
+            border-bottom: 2px solid floralwhite;
+        }
+        input[type=password]:focus {
+            border-bottom: 2px solid floralwhite;
+        }
+        input[type=email]:focus {
+            border-bottom: 2px solid floralwhite;
+        }
+        p {
+            font-size: 17px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+<div class="Login-Box">
+<img src="http://icons.iconarchive.com/icons/papirus-team/papirus-status/512/avatar-default-icon.png" class="avatar">
+    <h1>Sign-Up</h1>
+    <form type="action" action="/login" method="post">
+        <p>Enter Username</p>
+        <input type="text" name="username" placeholder="Enter Name">
+        <p>Email</p>
+        <input type="email" name="email" placeholder="Email">
+        <p>Create New Password</p>
+        <input type="password" name="password" placeholder="Enter Password">
+		<p>Repeat Password</p>
+        <input type="password" name="password" placeholder="Repeat Password">
+        <input type="submit" name="Submit" value="Sign-Up">
+    </form>
+
+</div>
+</body>
+</html>
